@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/uikit.min.css" />
+    <script src="scripts/jquery-2.2.1.js"></script>
+    <script src="scripts/uikit.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/jscolor.js"></script>
+</head>
+<body>
+    <div class="uk-panel">
+        <ul class="uk-grid" data-uk-grid-match="{row: false} data-uk-grid-margin">
+            <li class="uk-width-1-4">
+                <div class="uk-panel uk-panel-space">
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <button class="uk-button uk-icon-cog" data-uk-modal="{target:'#modal', bgclose:false}">
+                        Edit
+                    </button>
+                    <div id="modal" class="uk-modal">
+                        <div class="uk-modal-dialog" id="mod">
+                            <a class="uk-modal-close uk-close"></a>
+                            <div class="uk-modal-header">Header</div>
+                            <div class="uk-panel">
+                                <div class="uk-panel">
+                                    <ul class="uk-tab" data-uk-tab>
+                                        <li class="uk-active"><a href=""><input type="checkbox" id="cbx1" name="check" onclick="prevent(this)" />Tab 1</a></li>
+                                        <li><a href=""><input type="checkbox" id="cbx2" name="check" onclick="prevent(this)" />Tab 2</a></li>
+                                        <li><a href=""><input type="checkbox" id="cbx3" name="check" onclick="prevent(this)" />Tab 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
